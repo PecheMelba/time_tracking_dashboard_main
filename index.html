@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style_mobile.css">
+  <link rel="stylesheet" href="style_desktop.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div id="profile-card" class="bg-color"> 
+      <div id="profile-title-bg">
+        <div id="prolile-title-pannel">
+          <img id="image-pic" src="images/image-jeremy.png" alt="profile_pic">
+          <div id="profile-detail">
+            <div>Report for</div>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+      </div>
+
+      <div id="duration-filter">
+        <div id="daily-btn">Daily</div>
+        <div id="weekly-btn">Weekly</div>
+        <div id="monthly-btn">Monthly</div>
+      </div>
+    </div>
+
+    <div class="card" id="work-card">
+      <div class="card-content bg-color">
+        <div class="card-title-pannel">
+          Work
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+        
+        <div class="stats">
+          <div id="work-current_h" class="nb-hours">5hrs</div>     
+          <div id="work-previous_h" class="previous-hours">Previous - 7hrs</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="play-card">
+      <div class="card-content bg-color">
+        <div class="card-title-pannel">
+          Play
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>        
+
+        <div class="stats">
+          <div id="play-current_h" class="nb-hours">5hrs</div>     
+          <div id="play-previous_h" class="previous-hours">Previous - 7hrs</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="study-card">
+      <div class="card-content bg-color">
+        <div class="card-title-pannel">
+          Study
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>     
+        <div class="stats">
+          <div id="study-current_h" class="nb-hours">5hrs</div>     
+          <div id="study-previous_h" class="previous-hours">Previous - 7hrs</div> 
+        </div>         
+      </div>
+    </div>
+
+    <div class="card" id="exercise-card">
+      <div class="card-content bg-color">
+        <div class="card-title-pannel">
+          Exercise
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>    
+        
+        <div class="stats">
+          <div id="exercise-current_h" class="nb-hours">5hrs</div>     
+          <div id="exercise-previous_h" class="previous-hours">Previous - 7hrs</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="social-card">
+      <div class="card-content bg-color">
+        <div class="card-title-pannel">
+          Social
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>
+      
+        <div class="stats">
+          <div id="social-current_h" class="nb-hours">5hrs</div>     
+          <div id="social-previous_h" class="previous-hours">Previous - 7hrs</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="care-card">
+      <div class="card-content bg-color">
+        <div class="card-title-pannel">
+          Self Care
+          <img src="images/icon-ellipsis.svg" alt="icon-ellipsis">
+        </div>        
+
+        <div class="stats">
+          <div id="care-current_h" class="nb-hours">5hrs</div>     
+          <div id="care-previous_h" class="previous-hours">Previous - 7hrs</div> 
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Peche Melba</a>.
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

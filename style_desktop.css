@@ -1,0 +1,100 @@
+@media all and (min-width: 950px)
+{
+    body
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+        margin:0;
+    }
+    main
+    {
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1fr;
+
+        gap: 1.5em;
+
+        width: 950px;
+        height: 55%;
+        margin: 0 auto;
+    }
+    .attribution
+    {
+        position: absolute;
+        top: 0.1em;
+    }
+    /* ----------------------PROFILE CARD------------------------ */
+    #profile-card, .card
+    {
+        margin: 0em;
+        padding: 0em;
+    }
+    #profile-card
+    {
+        grid-column: 1 / 2;
+        grid-row: 1/3;       
+    }
+    #profile-title-bg
+    {
+        height:55%;
+    }
+    #prolile-title-pannel
+    {
+        padding: 1em;
+    }
+    h2
+    {
+        font-size:xx-large;
+        font-weight: 100;
+    }
+    #duration-filter
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;        
+        
+        padding: 0;
+        padding-left: 1em;
+
+        height:33%;
+        gap:1em;
+    }
+    #daily-btn:hover, #weekly-btn:hover, #monthly-btn:hover
+    {
+        cursor: pointer;
+        color:white;
+    }
+    /* ---------------------- STATS CARDS------------------------ */
+    .card
+    {
+        border-radius: 1em;
+        height:100%; 
+        min-height: 15em;       
+    }
+    .card-content
+    {
+        height:59%;   
+    }
+    .card-content:hover
+    {
+        background-color: hsl(235, 28%, 36%); 
+    }
+    .stats
+    {        
+        flex-direction: column;
+        align-items:flex-start;   
+
+        padding-top: 1em;
+        gap:0.6em;
+
+    }   
+    .nb-hours
+    {
+        font-size: 2.6em;
+        font-weight: 100;
+    }
+}
