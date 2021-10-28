@@ -11,11 +11,15 @@ request.onload = function()
     statsDatas = request.response;
     console.log(typeof statsDatas);
     console.log(statsDatas[0].timeframes.daily);
+
+    set_week_filter();
 }
 
 const dailyBtn = document.getElementById("daily-btn");
 const weeklyBtn = document.getElementById("weekly-btn");
 const monthlyBtn = document.getElementById("monthly-btn");
+
+
 
 function filterStats(filter)
 {
@@ -59,13 +63,16 @@ dailyBtn.addEventListener("click", ()=>
 
 });
 
-weeklyBtn.addEventListener("click", ()=>
+weeklyBtn.addEventListener("click", set_week_filter);
+
+function set_week_filter()
 {
     filterStats("weekly");
     weeklyBtn.style.color = "white";
     dailyBtn.style.color = "rgb(164, 170, 219)";
     monthlyBtn.style.color = "rgb(164, 170, 219)";
-});
+}
+
 monthlyBtn.addEventListener("click", ()=>
 {
     filterStats("monthly");
